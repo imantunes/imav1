@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IMA – Instituto Monsenhor Antunes</title>
 <link rel="icon" type="image/png" href="favicon.png">
-
 <meta name="description" content="Instituto Monsenhor Antunes — Promovendo dignidade e reintegração social no Grande ABC Paulista desde 2003.">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
 <style>
@@ -33,13 +32,9 @@ h2.section-title{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;line-heigh
 .section-white{padding:6rem 0;background:var(--white)}
 .section-cream{padding:6rem 0;background:var(--cream)}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-
-/* TOPBAR */
 .topbar{background:var(--navy-dark);color:rgba(255,255,255,.65);font-size:.78rem;padding:.42rem 0}
 .topbar .container{display:flex;justify-content:space-between;width:min(95%,92vw);align-items:center;flex-wrap:wrap;gap:.5rem}
 .topbar a{color:rgba(255,255,255,.65);text-decoration:none}.topbar a:hover{color:var(--orange-lt)}
-
-/* NAV */
 nav{position:sticky;top:0;z-index:999;background:var(--white);border-bottom:1px solid #eee;height:var(--nav-h);transition:box-shadow .3s}
 nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%;width:min(95%,92vw);margin-inline:auto}
@@ -64,28 +59,16 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .mobile-menu a{padding:.75rem 1.5rem;color:#333;text-decoration:none;font-weight:500;font-size:.93rem;display:block;border-bottom:1px solid #f5f5f5}
 .mobile-menu a:hover{color:var(--orange);background:var(--cream)}
 .mobile-menu.open{display:flex}
-
-/* HERO */
 #hero-section{min-height:calc(100vh - var(--nav-h));background:var(--navy-dark);display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
-.hero-content{display:flex;flex-direction:column;justify-content:center;padding: clamp(4rem, 50vh, 8rem) 7%;z-index:2}
+.hero-content{display:flex;flex-direction:column;justify-content:center;padding:clamp(4rem,50vh,8rem) 7%;z-index:2}
 .hero-eyebrow{display:flex;align-items:center;gap:.75rem;margin-bottom:1.75rem}
 .hero-tag{display:inline-block;background:var(--orange);color:var(--white);font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:.35rem .9rem;border-radius:2px}
 .hero-year{font-size:.78rem;color:rgba(255,239,255,.45);font-weight:500}
 .hero-content h1{font-size:clamp(2rem,4.2vw,3.6rem);font-weight:800;color:var(--white);line-height:1.08;margin-bottom:1rem}
 .hero-content h1 em{font-style:normal;color:var(--orange2)}
-.hero-content>p{font-size:1rem;color:rgba(255,255,255,.72);line-height:1.75;max-width:min(100%, 600px);margin-bottom:2.25rem}
-/* Correção do botão invisível no Hero */
-.hero-btns .btn-outline {
-    background: transparent !important;
-    color: var(--white) !important;
-    border: 2px solid var(--white) !important;
-    display: inline-flex;
-    align-items: center;
-}
-.hero-btns .btn-outline:hover {
-    background: var(--white) !important;
-    color: var(--navy-dark) !important;
-}
+.hero-content>p{font-size:1rem;color:rgba(255,255,255,.72);line-height:1.75;max-width:min(100%,600px);margin-bottom:2.25rem}
+.hero-btns .btn-outline{background:transparent!important;color:var(--white)!important;border:2px solid var(--white)!important;display:inline-flex;align-items:center}
+.hero-btns .btn-outline:hover{background:var(--white)!important;color:var(--navy-dark)!important}
 .hero-stats{display:flex;gap:2rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.12);flex-wrap:wrap}
 .stat-num{display:block;font-size:1.8rem;font-weight:800;color:var(--orange2);line-height:1}
 .stat-label{font-size:.72rem;color:rgba(255,255,255,.55);margin-top:.2rem;display:block;line-height:1.3}
@@ -95,12 +78,6 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .hero-pattern .person .head{width:40%;aspect-ratio:1;border-radius:50%;background:var(--orange)}
 .hero-pattern .person .body{width:60%;flex:1;border-radius:40% 40% 0 0;background:var(--orange)}
 .hero-big-logo .ima-lg{font-size:clamp(8rem,15vw,13rem);font-weight:800;color:var(--orange);letter-spacing:-.06em;line-height:1;opacity:100%}
-.hero-card{position:absolute;bottom:2.5rem;right:2.5rem;background:var(--white);border-radius:12px;padding:1.25rem 1.5rem;max-width:270px;box-shadow:0 20px 60px rgba(0,0,0,.3);z-index:3}
-.hero-card .card-label{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:.45rem}
-.hero-card p{font-size:.83rem;color:#444;line-height:1.55;font-style:italic}
-.orange-bar{height:3px;background:var(--orange);border-radius:0 0 4px 4px;margin-top:.9rem}
-
-/* PAGE HERO */
 .page-hero{background:var(--navy-dark);padding:5rem 0 4rem;position:relative;overflow:hidden}
 .page-hero::after{content:'';position:absolute;right:-5%;bottom:-30%;width:400px;height:400px;border-radius:50%;background:rgba(229,123,47,.07);pointer-events:none}
 .page-hero-inner{position:relative;z-index:1}
@@ -110,8 +87,6 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .page-hero-tag{display:inline-block;background:var(--orange);color:var(--white);font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:.3rem .85rem;border-radius:2px;margin-bottom:1.1rem}
 .page-hero h1{font-size:clamp(1.8rem,4.5vw,3.2rem);font-weight:800;color:var(--white);line-height:1.1;max-width:720px}
 .page-hero p{font-size:1rem;color:rgba(255,255,255,.65);max-width:620px;margin-top:.9rem;line-height:1.75}
-
-/* PERSON ILLUSTRATION */
 .qs-img-box{width:100%;aspect-ratio:6/5;background:var(--navy-dark);border-radius:16px;overflow:hidden;position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1.5rem;padding:2rem}
 .person-row{display:flex;gap:1rem}
 .pi{display:flex;flex-direction:column;align-items:center;gap:5px}
@@ -123,8 +98,6 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .qs-badge strong{display:block;font-size:1.9rem;font-weight:800}
 .qs-badge span{font-size:.78rem;opacity:.85}
 .qs-visual{position:relative}
-
-/* MVV */
 .mvv-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
 .mvv-card{padding:2rem;border-radius:12px;background:var(--cream);position:relative;overflow:hidden}
 .mvv-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--orange)}
@@ -135,8 +108,6 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .mvv-card ul{padding-left:1.1rem}.mvv-card ul li{margin-bottom:.15rem}
 .valores-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin-top:2rem}
 .valor-pill{padding:.85rem 1rem;border-radius:8px;background:var(--navy-dark);color:white;text-align:center;font-size:.8rem;font-weight:600}
-
-/* TIMELINE HORIZONTAL */
 .timeline-section{padding:5rem 0;background:var(--navy-dark);overflow:hidden}
 .timeline-header{text-align:center;margin-bottom:3rem}
 .tl-scroll-wrap{overflow-x:auto;padding:1rem 2rem 2.5rem;cursor:grab;user-select:none;scrollbar-width:thin;scrollbar-color:var(--orange) rgba(255,255,255,.1)}
@@ -152,8 +123,6 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .tl-node-card h3{font-size:.8rem;font-weight:700;color:white;margin-bottom:.3rem;line-height:1.3}
 .tl-node-card p{font-size:.7rem;color:rgba(255,255,255,.5);line-height:1.55}
 .tl-scroll-hint{text-align:center;font-size:.75rem;color:rgba(255,255,255,.3);margin-top:.5rem;letter-spacing:.05em}
-
-/* PRÊMIOS */
 .premios-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
 .premio-card{background:var(--white);border-radius:12px;padding:2rem;border:1px solid #eee;transition:transform .25s,box-shadow .25s}
 .premio-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.08)}
@@ -161,16 +130,8 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .premio-card span.ano{font-size:.72rem;font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem;display:block}
 .premio-card h3{font-size:.95rem;font-weight:700;color:var(--navy-dark);margin-bottom:.4rem}
 .premio-card p{font-size:.82rem;color:#777;line-height:1.6}
-
-/* ÁLBUNS */
 .albuns-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
-.album-card{border-radius:12px;overflow:hidden;position:relative;aspect-ratio:4/3;cursor:pointer}
-.album-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.8) 0%,rgba(0,0,0,.1) 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem}
-.album-card h3{color:white;font-size:1rem;font-weight:700;margin-bottom:.2rem}
-.album-card span{font-size:.75rem;color:rgba(255,255,255,.55)}
-.album-btn{display:inline-flex;align-items:center;gap:.35rem;background:var(--orange);color:white;font-size:.72rem;font-weight:700;padding:.38rem .85rem;border-radius:3px;text-decoration:none;margin-top:.65rem;width:fit-content}
 
-/* PROGRAMAS */
 .prog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:3rem}
 .prog-card{border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.07);transition:transform .25s,box-shadow .25s}
 .prog-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.12)}
@@ -194,47 +155,16 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .prog-meta{display:flex;gap:2rem;flex-wrap:wrap;padding-top:1rem;border-top:1px solid #f0f0f0;margin-top:.25rem}
 .pm-item strong{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--orange);display:block}
 .pm-item span{font-size:.8rem;color:#666}
-
-/* DETAIL PROGRAMAS (página interna) */
 .prog-detail{border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.07);margin-bottom:3rem;background:white}
 .prog-detail .prog-header{min-height:240px;padding:3rem 2.5rem 2.5rem}
 .prog-detail .prog-body{padding:2rem 2.5rem 2.5rem;border-radius:0 0 20px 20px;border:1px solid #eee;border-top:none}
-.prog-detail .prog-body>*{max-width:100%}
-.prog-list {
-  list-style: none;
-  padding-left: 0 !important; /* Remove o recuo padrão da lista */
-  margin-top: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  }
-
-.prog-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  font-size: 0.88rem;
-  color: #444;
-  line-height: 1.55;
-  padding-left: 0 !important; /* Garante que a linha comece no limite esquerdo */
-  }
-
-/* Ajuste visual da bolinha laranja para não ficar colada na margem */
-.prog-list li::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--orange);
-  flex-shrink: 0;
-  margin-top: 0.45rem;
-  }
+.prog-list{list-style:none;padding-left:0!important;margin-top:1.5rem;display:flex;flex-direction:column;gap:.6rem}
+.prog-list li{display:flex;align-items:flex-start;gap:.75rem;font-size:.88rem;color:#444;line-height:1.55;padding-left:0!important}
+.prog-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0;margin-top:.45rem}
 .address-cards{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1.25rem}
 .addr-card{background:var(--cream);border-radius:8px;padding:1rem 1.1rem;border-left:3px solid var(--orange)}
 .addr-card strong{font-size:.75rem;font-weight:700;color:var(--navy-dark);text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:.25rem}
 .addr-card span{font-size:.8rem;color:#666;line-height:1.5}
-
-/* COMO AJUDAR */
 .ajudar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
 .ajudar-card{background:white;border-radius:12px;padding:2rem;border:1px solid #e8e8d8;transition:transform .25s,box-shadow .25s}
 .ajudar-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.07)}
@@ -252,8 +182,6 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .bank-info{background:var(--navy-dark);border-radius:8px;padding:.85rem 1rem;margin-top:.6rem}
 .bank-info p{font-size:.75rem;color:rgba(255,255,255,.65);line-height:1.8;font-family:monospace}
 .bank-info strong{color:var(--orange-lt)}
-
-/* TRANSPARÊNCIA */
 .doc-info-card{background:var(--cream);border-radius:12px;padding:1.5rem;border-left:4px solid var(--orange);margin-bottom:.85rem}
 .doc-info-card strong{display:block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--orange);margin-bottom:.3rem}
 .doc-info-card p{font-size:.9rem;color:#444;margin:0}
@@ -271,7 +199,6 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .ctas-box{background:var(--navy-dark);border-radius:14px;padding:2.5rem;display:grid;grid-template-columns:1fr auto;align-items:center;gap:2rem;margin-top:3rem}
 .ctas-box h3{color:white;font-size:1.2rem;font-weight:700;margin-bottom:.4rem}
 .ctas-box p{color:rgba(255,255,255,.6);font-size:.87rem}
-
 /* FALE CONOSCO */
 .fale-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start}
 .contact-cards{display:flex;flex-direction:column;gap:.9rem;margin-bottom:2rem}
@@ -304,8 +231,6 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .info-box{background:var(--cream);border-radius:12px;padding:1.5rem 1.75rem;border-left:4px solid var(--orange);margin-bottom:1.25rem}
 .info-box strong{display:block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--orange);margin-bottom:.3rem}
 .info-box p,.info-box span{font-size:.88rem;color:#555;line-height:1.65}
-
-/* FOOTER */
 footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
 .ft-brand .logo-ima{color:var(--orange);font-size:2rem;display:block;margin-bottom:.4rem}
@@ -320,18 +245,12 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
 .ft-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:1.75rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .ft-bottom p{font-size:.76rem}.ft-bottom span{font-size:.73rem;color:rgba(255,255,255,.27)}
 .dados-rodape{display:flex;flex-direction:column;gap:.2rem;font-size:.75rem;color:rgba(255,255,255,.3);margin-top:.5rem}
-
-/* FLOAT */
 .colab-float{position:fixed;bottom:2rem;right:2rem;z-index:998;background:var(--navy-dark);color:white;border-radius:50px;padding:.7rem 1.35rem;font-size:.78rem;font-weight:700;text-decoration:none;box-shadow:0 8px 30px rgba(0,0,0,.25);display:flex;align-items:center;gap:.5rem;transition:background .2s,transform .2s}
 .colab-float:hover{background:var(--orange);transform:translateY(-3px)}
 .colab-dot{width:7px;height:7px;border-radius:50%;background:var(--orange-lt);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-
-/* PAGE SWITCHER */
-.page{display:none!important}.page.active{display:block!important}
-#home-page{display:block!important}
-
-/* RESPONSIVE */
+.page{display:none}.page.active{display:block}
+#home-page{display:block}
 @media(max-width:1024px){
   #hero-section{grid-template-columns:1fr;min-height:auto}
   .hero-visual{display:none}.hero-content{padding:5rem 5vw}
@@ -360,7 +279,6 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
 </head>
 <body>
 
-<!-- TOPBAR -->
 <div class="topbar">
   <div class="container">
     <span>📍 Av. Dr. Erasmo, 586 — Vila Assunção, Santo André, SP</span>
@@ -368,7 +286,6 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
   </div>
 </div>
 
-<!-- NAV -->
 <nav id="navbar">
   <div class="container nav-inner">
     <a href="#" class="logo-wrap" onclick="go('home-page',event)">
@@ -384,7 +301,6 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
           <a href="#" onclick="go('quem-page',event,true);sc('qs-mvv')">Missão, Visão e Valores</a>
           <a href="#" onclick="go('quem-page',event,true);sc('qs-timeline')">Linha do Tempo</a>
           <a href="#" onclick="go('quem-page',event,true);sc('qs-premios')">Prêmios</a>
-          
         </div>
       </li>
       <li class="has-dropdown">
@@ -397,10 +313,8 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
         </div>
       </li>
       <li><a href="https://www.notion.so/Portal-de-transpar-ncia-IMA-34b6dd7ab2a3809fa8c6e0892d68ebba?source=copy_link" target="_blank" rel="noopener noreferrer">Transparência</a></li>
-      <li><a href="#" onclick="goTabSc('pix')">Fale Conosco</a></li>
-      </li>
-      <!--<li><a href="#" onclick="go('colab-page',event)">Colaboradores</a></li>-->
-      <li class="nav-cta"><a href="#" onclick="goTabSc('pix')">Doe Agora</a></li>
+      <li><a href="#" onclick="go('fale-page',event)">Fale Conosco</a></li>
+      <li class="nav-cta"><a href="#" onclick="go('doe-page',event)">Doe Agora</a></li>
     </ul>
     <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
   </div>
@@ -409,15 +323,13 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
     <a href="#" onclick="go('quem-page',event,true);sc('qs-historia')">Quem Somos</a>
     <a href="#" onclick="go('prog-page',event,true);sc('prog-cmv')">Programas</a>
     <a href="https://www.notion.so/Portal-de-transpar-ncia-IMA-34b6dd7ab2a3809fa8c6e0892d68ebba?source=copy_link" target="_blank" rel="noopener noreferrer">Transparência</a>
-    <a href="#" onclick="goTabSc('contato')">Fale Conosco</a>
-    <a href="#" onclick="goTabSc('pix')" style="color:var(--orange);font-weight:800">→ Doe Agora</a>
+    <a href="#" onclick="go('fale-page',event)">Fale Conosco</a>
+    <a href="#" onclick="go('doe-page',event)" style="color:var(--orange);font-weight:800">→ Doe Agora</a>
   </div>
 </nav>
 
-
-<!-- ══════════ HOME ══════════ -->
+<!-- HOME -->
 <div class="page active" id="home-page">
-
   <section id="hero-section">
     <div class="hero-content">
       <div class="hero-eyebrow">
@@ -428,7 +340,7 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
       <p>Entidade sem fins lucrativos que visa promover a integração do ser humano e melhorar a sua participação na família, no trabalho e na sociedade — prioritariamente para os excluídos e esquecidos.</p>
       <div class="hero-btns">
         <a href="#" class="btn btn-primary" onclick="go('prog-page',event,true);sc('prog-page')">Conheça os Programas</a>
-        <a href="#" class="btn btn-outline" onclick="goTabSc('pix')">Faça uma Doação</a>
+        <a href="#" class="btn btn-outline" onclick="go('doe-page',event)">Faça uma Doação</a>
       </div>
       <div class="hero-stats">
         <div><span class="stat-num">7</span><span class="stat-label">Casas de acolhimento</span></div>
@@ -440,11 +352,9 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
     <div class="hero-visual">
       <div class="hero-pattern" id="heroPattern"></div>
       <div class="hero-big-logo"><span class="ima-lg">ima</span></div>
-      
     </div>
   </section>
 
-  <!-- SOBRE -->
   <section class="section-cream">
     <div class="container">
       <div class="two-col">
@@ -467,7 +377,6 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
     </div>
   </section>
 
-  <!-- PROGRAMAS HOME PREVIEW -->
   <section class="section-white">
     <div class="container">
       <div class="fade-up" style="margin-bottom:3rem">
@@ -495,13 +404,10 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
     </div>
   </section>
 
-  <!-- COMO AJUDAR HOME -->
   <section class="section-cream">
     <div class="container">
       <div class="fade-up" style="text-align:center;margin-bottom:0"><span class="section-tag">Ajude a manter os programas</span><h2 class="section-title">Como você pode contribuir</h2></div>
       <div class="ajudar-grid fade-up">
-
-        <!-- PIX -->
         <div class="ajudar-card">
           <h3>💳 Doe por PIX</h3>
           <p>Transferência direta e segura. Seu apoio chega imediatamente aos programas.</p>
@@ -513,15 +419,11 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
               <span style="margin-top:.3rem;color:#aaa;font-size:.7rem">Instituto Monsenhor<br>José Benedito Antunes</span>
             </div>
           </div>
-          <div class="bank-info">
-            <p><strong>Banco 341</strong> — Itaú<br>Ag <strong>1669</strong> &nbsp;·&nbsp; Cc <strong>24051-5</strong></p>
-          </div>
+          <div class="bank-info"><p><strong>Banco 341</strong> — Itaú<br>Ag <strong>1669</strong> &nbsp;·&nbsp; Cc <strong>24051-5</strong></p></div>
         </div>
-
-        <!-- NOTA PAULISTA -->
         <div class="ajudar-card">
           <h3>🧾 Nota Fiscal Paulista</h3>
-          <p style="margin-bottom:.6rem">Transforme suas compras em solidariedade — <strong>sem gastar nada!</strong> Cada nota fiscal que você pede ajuda automaticamente.</p>
+          <p style="margin-bottom:.6rem">Transforme suas compras em solidariedade — <strong>sem gastar nada!</strong></p>
           <div style="background:var(--cream);border-radius:8px;padding:.85rem 1rem;margin-bottom:.75rem;font-size:.78rem;color:#555;line-height:1.7">
             <strong style="color:var(--navy-dark);display:block;margin-bottom:.35rem">Por que ser um doador automático?</strong>
             <ul style="padding-left:1rem">
@@ -539,8 +441,6 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
           </ol>
           <a href="https://www.nfp.fazenda.sp.gov.br" target="_blank" class="btn btn-primary" style="font-size:.82rem;padding:.65rem 1.2rem;width:100%;justify-content:center">Acessar Nota Fiscal Paulista →</a>
         </div>
-
-        <!-- MATERIAL -->
         <div class="ajudar-card">
           <h3>📦 Doação de Material</h3>
           <p>Itens essenciais para o dia a dia dos moradores das casas — agendamento prévio necessário.</p>
@@ -553,15 +453,12 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
           </ul>
           <a href="#" class="btn btn-outline" onclick="go('fale-page',event);tab('material')" style="font-size:.82rem;padding:.65rem 1.2rem;width:100%;justify-content:center">Combinar doação →</a>
         </div>
-
       </div>
     </div>
   </section>
+</div>
 
-</div><!-- /home-page -->
-
-
-<!-- ══════════ QUEM SOMOS ══════════ -->
+<!-- QUEM SOMOS -->
 <div class="page" id="quem-page">
   <div class="page-hero">
     <div class="container page-hero-inner">
@@ -571,8 +468,6 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
       <p>Conheça a trajetória, os valores e as pessoas por trás do Instituto Monsenhor Antunes.</p>
     </div>
   </div>
-
-  <!-- HISTÓRIA -->
   <section class="section-cream" id="qs-historia">
     <div class="container">
       <div class="two-col">
@@ -594,8 +489,6 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
       </div>
     </div>
   </section>
-
-  <!-- TIMELINE HORIZONTAL — logo após Quem Somos -->
   <section class="timeline-section" id="qs-timeline">
     <div class="container">
       <div class="timeline-header fade-up">
@@ -623,80 +516,19 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
     </div>
     <p class="tl-scroll-hint">← arraste para navegar →</p>
   </section>
-
-  <!-- MVV -->
   <section class="section-white" id="qs-mvv">
     <div class="container">
       <div class="fade-up" style="text-align:center"><span class="section-tag">Identidade Organizacional</span><h2 class="section-title">Missão, Visão e Valores</h2></div>
       <div class="mvv-cards fade-up">
-        <div class="mvv-card">
-          <div class="mvv-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h3>Missão</h3>
-          <p>Promover a dignidade da pessoa em situação de risco/rua, visando melhorar a sua qualidade de vida e sua reinserção na família e na sociedade, por meio da assistência social.</p>
-        </div>
-        <div class="mvv-card">
-          <div class="mvv-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
-          <h3>Visão de Futuro</h3>
-          <ul style="margin-top:.4rem">
-            <li>Trazer esperança aos excluídos e (re)integrá-los na sociedade</li>
-            <li>Atuar com compromisso, ética e inovação</li>
-            <li>Superar as expectativas dos usuários e agentes envolvidos</li>
-          </ul>
-        </div>
-        <div class="mvv-card">
-          <div class="mvv-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-          <h3>Valores</h3>
-          <ul style="margin-top:.4rem">
-            <li>Opção pelo pobre e excluído</li>
-            <li>Defesa da vida e da dignidade humana</li>
-            <li>Respeito ao ser humano, individual e coletivamente</li>
-            <li>Agir com ética e transparência</li>
-          </ul>
-        </div>
+        <div class="mvv-card"><div class="mvv-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Missão</h3><p>Promover a dignidade da pessoa em situação de risco/rua, visando melhorar a sua qualidade de vida e sua reinserção na família e na sociedade, por meio da assistência social.</p></div>
+        <div class="mvv-card"><div class="mvv-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><h3>Visão de Futuro</h3><ul style="margin-top:.4rem"><li>Trazer esperança aos excluídos e (re)integrá-los na sociedade</li><li>Atuar com compromisso, ética e inovação</li><li>Superar as expectativas dos usuários e agentes envolvidos</li></ul></div>
+        <div class="mvv-card"><div class="mvv-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><h3>Valores</h3><ul style="margin-top:.4rem"><li>Opção pelo pobre e excluído</li><li>Defesa da vida e da dignidade humana</li><li>Respeito ao ser humano, individual e coletivamente</li><li>Agir com ética e transparência</li></ul></div>
       </div>
       <div class="valores-grid fade-up">
-        <div class="valor-pill">Dignidade Humana</div>
-        <div class="valor-pill">Opção pelo Excluído</div>
-        <div class="valor-pill">Ética e Transparência</div>
-        <div class="valor-pill">Reintegração Social</div>
-        <div class="valor-pill">Afeto e Cuidado</div>
-        <div class="valor-pill">Inclusão</div>
-        <div class="valor-pill">Defesa dos Direitos</div>
-        <div class="valor-pill">Esperança</div>
+        <div class="valor-pill">Dignidade Humana</div><div class="valor-pill">Opção pelo Excluído</div><div class="valor-pill">Ética e Transparência</div><div class="valor-pill">Reintegração Social</div><div class="valor-pill">Afeto e Cuidado</div><div class="valor-pill">Inclusão</div><div class="valor-pill">Defesa dos Direitos</div><div class="valor-pill">Esperança</div>
       </div>
     </div>
   </section>
-
-  <!-- TIMELINE HORIZONTAL -->
-  <section class="timeline-section" id="qs-timeline">
-    <div class="container">
-      <div class="timeline-header fade-up">
-        <span class="section-tag" style="color:var(--orange-lt)">Linha do Tempo</span>
-        <h2 class="section-title" style="color:white;font-size:clamp(1.6rem,3vw,2.4rem)">Uma trajetória de impacto</h2>
-      </div>
-    </div>
-    <div class="tl-scroll-wrap" id="tlWrap">
-      <div class="tl-track" id="tlTrack">
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2003</span><div class="tl-node-card"><h3>Fundação do Instituto</h3><p>Campanha da Fraternidade inspira a criação do IMA e do Projeto Casa Mais Vida.</p></div></div>
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2004</span><div class="tl-node-card"><h3>Projeto Pão Nosso</h3><p>Renomeado pelos próprios usuários para Espaço Arte e Cidadania.</p></div></div>
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2005</span><div class="tl-node-card"><h3>Prêmio Direitos Humanos</h3><p>Nomeado ao prêmio pela Prefeitura Municipal de Santo André.</p></div></div>
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2007</span><div class="tl-node-card"><h3>Andrezinho Cidadão</h3><p>Instituto assume o projeto da PMSA para bem-estar de crianças e adolescentes em situação de rua.</p></div></div>
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2008</span><div class="tl-node-card"><h3>Projeto Aquecer</h3><p>Abrigou 40 pessoas/noite nos meses mais frios, oferecendo proteção emergencial.</p></div></div>
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2010</span><div class="tl-node-card"><h3>Espaço Adolescente</h3><p>Atendimento a jovens em situação de conflito com a lei.</p></div></div>
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2011</span><div class="tl-node-card"><h3>Criança Esperança</h3><p>Premiado pelo projeto Cine Debate, levando cinema a 5 comunidades vulneráveis.</p></div></div>
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2013</span><div class="tl-node-card"><h3>+2 mil atendimentos</h3><p>Ampliação do Andrezinho Cidadão, atendendo mais de 2 mil crianças e adolescentes.</p></div></div>
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2014</span><div class="tl-node-card"><h3>Lar São Francisco</h3><p>Instituto assume o cuidado de crianças e adolescentes afastados de suas famílias.</p></div></div>
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2016</span><div class="tl-node-card"><h3>Residência Inclusiva</h3><p>Início do programa em Santo André e São Bernardo do Campo.</p></div></div>
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2017</span><div class="tl-node-card"><h3>Expansão para Mauá</h3><p>Projetos chegam a novos municípios, iniciando operações em Mauá.</p></div></div>
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2020</span><div class="tl-node-card"><h3>RI em Osasco</h3><p>Expansão da Residência Inclusiva para o Município de Osasco.</p></div></div>
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2021</span><div class="tl-node-card"><h3>ILPI em Osasco</h3><p>Implementação da Instituição de Longa Permanência para Pessoas Idosas.</p></div></div>
-        <div class="tl-node"><div class="tl-dot-inner"></div><span class="tl-node-year">2025</span><div class="tl-node-card"><h3>Nova expansão</h3><p>2ª RI em Osasco e 4ª em Mauá. Mais de 7.000 atendimentos no ano.</p></div></div>
-      </div>
-    </div>
-    <p class="tl-scroll-hint">← arraste para navegar →</p>
-  </section>
-
-  <!-- PRÊMIOS -->
   <section class="section-white" id="qs-premios">
     <div class="container">
       <div class="fade-up"><span class="section-tag">Reconhecimento</span><h2 class="section-title">Prêmios e reconhecimentos</h2></div>
@@ -707,22 +539,10 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
       </div>
     </div>
   </section>
+  
+</div>
 
-  <!-- ÁLBUNS -->
-  <section class="section-cream" id="qs-albuns">
-    <div class="container">
-      <div class="fade-up"><span class="section-tag">Galeria</span><h2 class="section-title">Álbuns de fotos</h2></div>
-      <div class="albuns-grid">
-        <div class="album-card fade-up" style="background:var(--navy-dark)"><div class="album-overlay"><h3>Casa Mais Vida</h3><span>Vida e cotidiano na casa</span><a href="https://www.imantunes.org.br/albuns/album-programa-casa-mais-vida.html" target="_blank" class="album-btn">Ver álbum →</a></div></div>
-        <div class="album-card fade-up" style="background:var(--dark-green)"><div class="album-overlay"><h3>Residência Inclusiva</h3><span>Acolhimento com dignidade</span><a href="https://www.imantunes.org.br/albuns/album-residenciainclusiva.html" target="_blank" class="album-btn">Ver álbum →</a></div></div>
-        <div class="album-card fade-up" style="background:var(--navy2)"><div class="album-overlay"><h3>Institucional</h3><span>Eventos e registros do IMA</span><a href="https://www.imantunes.org.br/albuns/album-institucional.html" target="_blank" class="album-btn">Ver álbum →</a></div></div>
-      </div>
-    </div>
-  </section>
-</div><!-- /quem-page -->
-
-
-<!-- ══════════ PROGRAMAS ══════════ -->
+<!-- PROGRAMAS -->
 <div class="page" id="prog-page">
   <div class="page-hero">
     <div class="container page-hero-inner">
@@ -732,163 +552,68 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
       <p>Conheça em detalhe cada programa do IMA, seus objetivos, públicos e localização.</p>
     </div>
   </div>
-
-  <!-- CASA MAIS VIDA -->
   <section class="section-white" id="prog-cmv">
     <div class="container">
       <div class="prog-detail fade-up">
-        <div class="prog-header cmv">
-          <div class="prog-hpattern" id="ph_cmv"></div>
-          <span class="prog-badge">Desde 2003</span>
-          <h2>🏠 Casa Mais Vida</h2>
-          <p>"Acolher e promover a qualidade de vida da pessoa em situação de rua, buscando a reinserção na sociedade, na família e no mundo do trabalho."</p>
-        </div>
+        <div class="prog-header cmv"><div class="prog-hpattern" id="ph_cmv"></div><span class="prog-badge">Desde 2003</span><h2>🏠 Casa Mais Vida</h2><p>"Acolher e promover a qualidade de vida da pessoa em situação de rua, buscando a reinserção na sociedade, na família e no mundo do trabalho."</p></div>
         <div class="prog-body">
-          <p>Este projeto representa o marco inicial do Instituto. Nascido em 2003, foi estruturado para resgatar a dignidade de adultos e pessoas idosas em situação de exclusão social e extrema vulnerabilidade. É a base da metodologia de acolhimento do IMA, focando no restabelecimento de vínculos e na garantia de direitos fundamentais.</p>
-          <div class="info-box" style="margin-top:1.25rem">
-            <strong>📍 Casa Mais Vida</strong>
-            <span>Av. Dr. Erasmo, 586 — Vila Assunção, Santo André — CEP 09030-010</span>
-          </div>
-          <div class="info-box">
-            <strong>🏢 Administrativo</strong>
-            <span>Av. Dr. Erasmo, 576 — Vila Assunção, Santo André — CEP 09030-010</span>
-          </div>
-          <ul class="prog-list">
-            <li>Moradia comunitária permanente com ambiente humanizado</li>
-            <li>Alimentação, higiene e cuidados básicos de saúde</li>
-            <li>Oficinas de artesanato, cultura e lazer</li>
-            <li>Resgate da autoestima e apoio emocional</li>
-            <li>Encaminhamento a serviços de saúde e benefícios legais</li>
-          </ul>
-          <div class="prog-meta">
-            <div class="pm-item"><strong>Público</strong><span>Adultos e idosos em situação de rua</span></div>
-            <div class="pm-item"><strong>Capacidade</strong><span>~20 moradores</span></div>
-          </div>
+          <p>Este projeto representa o marco inicial do Instituto. Nascido em 2003, foi estruturado para resgatar a dignidade de adultos e pessoas idosas em situação de exclusão social e extrema vulnerabilidade.</p>
+          <div class="info-box" style="margin-top:1.25rem"><strong>📍 Casa Mais Vida</strong><span>Av. Dr. Erasmo, 586 — Vila Assunção, Santo André — CEP 09030-010</span></div>
+          <div class="info-box"><strong>🏢 Administrativo</strong><span>Av. Dr. Erasmo, 576 — Vila Assunção, Santo André — CEP 09030-010</span></div>
+          <ul class="prog-list"><li>Moradia comunitária permanente com ambiente humanizado</li><li>Alimentação, higiene e cuidados básicos de saúde</li><li>Oficinas de artesanato, cultura e lazer</li><li>Resgate da autoestima e apoio emocional</li><li>Encaminhamento a serviços de saúde e benefícios legais</li></ul>
+          <div class="prog-meta"><div class="pm-item"><strong>Público</strong><span>Adultos e idosos em situação de rua</span></div><div class="pm-item"><strong>Capacidade</strong><span>~20 moradores</span></div></div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- RESIDÊNCIA INCLUSIVA -->
   <section class="section-cream" id="prog-ri">
     <div class="container">
       <div class="prog-detail fade-up">
-        <div class="prog-header ri">
-          <div class="prog-hpattern" id="ph_ri"></div>
-          <span class="prog-badge">Alta Complexidade — SUAS</span>
-          <h2>🏘️ Residência Inclusiva</h2>
-          <p>O programa central do Instituto atualmente.</p>
-        </div>
+        <div class="prog-header ri"><div class="prog-hpattern" id="ph_ri"></div><span class="prog-badge">Alta Complexidade — SUAS</span><h2>🏘️ Residência Inclusiva</h2><p>O programa central do Instituto atualmente.</p></div>
         <div class="prog-body">
           <p>É o programa central do Instituto atualmente. Trata-se de um serviço de Alta Complexidade para jovens e adultos com deficiência que não possuem retaguarda familiar ou condições de vida independente.</p>
           <div class="sub-items" style="margin-top:1.25rem">
-            <div class="sub-item"><strong>🏠 Ambiente</strong>Diferente de grandes abrigos, são casas inseridas em bairros residenciais, com características domiciliares e convivência comunitária.</div>
-            <div class="sub-item"><strong>🎯 Foco</strong>Oferece cuidado integral (24h), estimulando ao máximo a autonomia, a inclusão social e o protagonismo do morador, garantindo que ele não viva isolado da sociedade.</div>
+            <div class="sub-item"><strong>🏠 Ambiente</strong>Casas inseridas em bairros residenciais, com características domiciliares e convivência comunitária.</div>
+            <div class="sub-item"><strong>🎯 Foco</strong>Cuidado integral (24h), estimulando ao máximo a autonomia, a inclusão social e o protagonismo do morador.</div>
           </div>
-          <!-- RI MAUÁ -->
-          <div style="margin-bottom:1.25rem">
-            <strong style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--orange);display:block;margin-bottom:.6rem">📍 Residência Inclusiva — Mauá (4 unidades)</strong>
-            <div class="address-cards">
-              <div class="addr-card"><strong>RI-1 Mauá</strong><span>Rua Avaré, 46 — Matriz<br>CEP 09370-200</span></div>
-              <div class="addr-card"><strong>RI-2 Mauá</strong><span>Rua Santos Dumont, 350 — Vila Bocaina<br>CEP 09310-130</span></div>
-              <div class="addr-card"><strong>RI-3 Mauá</strong><span>Rua Duque de Caxias, 70<br>CEP 09310-290</span></div>
-              <div class="addr-card"><strong>RI-4 Mauá</strong><span>Rua Duque de Caxias, 82<br>CEP 09310-290</span></div>
-            </div>
-          </div>
-          <!-- RI OSASCO -->
-          <div style="margin-bottom:1.25rem">
-            <strong style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--orange);display:block;margin-bottom:.6rem">📍 Residência Inclusiva — Osasco (2 unidades)</strong>
-            <div class="address-cards">
-              <div class="addr-card"><strong>RI-1 Osasco</strong><span>Av. Comandante Sampaio, 605 — KM18<br>CEP 06192-010</span></div>
-              <div class="addr-card"><strong>RI-2 Osasco</strong><span>Rua Manuela Saraiva, 188 — Vila Campesina<br>CEP 06023-060</span></div>
-            </div>
-          </div>
-          <div class="prog-meta">
-            <div class="pm-item"><strong>Público</strong><span>Jovens e adultos com deficiência</span></div>
-            <div class="pm-item"><strong>Casas</strong><span>7 unidades ativas</span></div>
-            <div class="pm-item"><strong>Moradores</strong><span>+80 atualmente</span></div>
-          </div>
+          <div style="margin-bottom:1.25rem"><strong style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--orange);display:block;margin-bottom:.6rem">📍 Residência Inclusiva — Mauá (4 unidades)</strong><div class="address-cards"><div class="addr-card"><strong>RI-1 Mauá</strong><span>Rua Avaré, 46 — Matriz<br>CEP 09370-200</span></div><div class="addr-card"><strong>RI-2 Mauá</strong><span>Rua Santos Dumont, 350 — Vila Bocaina<br>CEP 09310-130</span></div><div class="addr-card"><strong>RI-3 Mauá</strong><span>Rua Duque de Caxias, 70<br>CEP 09310-290</span></div><div class="addr-card"><strong>RI-4 Mauá</strong><span>Rua Duque de Caxias, 82<br>CEP 09310-290</span></div></div></div>
+          <div style="margin-bottom:1.25rem"><strong style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--orange);display:block;margin-bottom:.6rem">📍 Residência Inclusiva — Osasco (2 unidades)</strong><div class="address-cards"><div class="addr-card"><strong>RI-1 Osasco</strong><span>Av. Comandante Sampaio, 605 — KM18<br>CEP 06192-010</span></div><div class="addr-card"><strong>RI-2 Osasco</strong><span>Rua Manuela Saraiva, 188 — Vila Campesina<br>CEP 06023-060</span></div></div></div>
+          <div class="prog-meta"><div class="pm-item"><strong>Público</strong><span>Jovens e adultos com deficiência</span></div><div class="pm-item"><strong>Casas</strong><span>7 unidades ativas</span></div><div class="pm-item"><strong>Moradores</strong><span>+80 atualmente</span></div></div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- CASA DE PASSAGEM -->
   <section class="section-white" id="prog-alb">
     <div class="container">
       <div class="prog-detail fade-up">
-        <div class="prog-header alb">
-          <div class="prog-hpattern" id="ph_alb"></div>
-          <span class="prog-badge">Proteção Emergencial</span>
-          <h2>🛌 Casa de Passagem (Albergue)</h2>
-          <p>Acolhimento emergencial e temporário voltado para pessoas em situação de rua ou migrantes.</p>
-        </div>
+        <div class="prog-header alb"><div class="prog-hpattern" id="ph_alb"></div><span class="prog-badge">Proteção Emergencial</span><h2>🛌 Casa de Passagem (Albergue)</h2><p>Acolhimento emergencial e temporário voltado para pessoas em situação de rua ou migrantes.</p></div>
         <div class="prog-body">
           <p>Um serviço de acolhimento emergencial e temporário voltado para pessoas em situação de rua ou migrantes. Garante pernoite seguro, alimentação, higiene pessoal e proteção imediata.</p>
-          <div class="info-box" style="margin-top:1.25rem">
-            <strong>📍 Casa de Passagem — Albergue</strong>
-            <span>Rua Luís Lacava, 327 — Bairro Bocaina, Mauá — CEP 09310-080</span>
-          </div>
-          <div class="sub-items" style="margin-top:.75rem">
-            <div class="sub-item"><strong>🛡️ Proteção imediata</strong>Além da sobrevivência básica, atua na redução de danos e no encaminhamento qualificado para outros serviços da rede socioassistencial.</div>
-            <div class="sub-item"><strong>🔗 Encaminhamento</strong>Busca saídas sustentáveis para a situação de rua, conectando cada pessoa à rede de políticas públicas disponível.</div>
-          </div>
-          <ul class="prog-list">
-            <li>Pernoite seguro</li>
-            <li>Alimentação e higiene pessoal</li>
-            <li>Acompanhamento social básico</li>
-            <li>Orientação para acesso a serviços públicos</li>
-          </ul>
-          <div class="prog-meta">
-            <div class="pm-item"><strong>Público</strong><span>Pessoas em situação de rua e migrantes</span></div>
-            <div class="pm-item"><strong>Regime</strong><span>Temporário / Emergencial</span></div>
-          </div>
+          <div class="info-box" style="margin-top:1.25rem"><strong>📍 Casa de Passagem — Albergue</strong><span>Rua Luís Lacava, 327 — Bairro Bocaina, Mauá — CEP 09310-080</span></div>
+          <div class="sub-items" style="margin-top:.75rem"><div class="sub-item"><strong>🛡️ Proteção imediata</strong>Atua na redução de danos e no encaminhamento qualificado para outros serviços da rede socioassistencial.</div><div class="sub-item"><strong>🔗 Encaminhamento</strong>Busca saídas sustentáveis para a situação de rua, conectando cada pessoa à rede de políticas públicas disponível.</div></div>
+          <ul class="prog-list"><li>Pernoite seguro</li><li>Alimentação e higiene pessoal</li><li>Acompanhamento social básico</li><li>Orientação para acesso a serviços públicos</li></ul>
+          <div class="prog-meta"><div class="pm-item"><strong>Público</strong><span>Pessoas em situação de rua e migrantes</span></div><div class="pm-item"><strong>Regime</strong><span>Temporário / Emergencial</span></div></div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- CRPD -->
   <section class="section-cream" id="prog-crpd">
     <div class="container">
       <div class="prog-detail fade-up">
-        <div class="prog-header crpd">
-          <div class="prog-hpattern" id="ph_crpd"></div>
-          <span class="prog-badge">Média Complexidade</span>
-          <h2>♿ Centro de Referência da Pessoa com Deficiência</h2>
-          <p>Espaço de atendimento aberto que centraliza serviços para pessoas com deficiência e suas famílias.</p>
-        </div>
+        <div class="prog-header crpd"><div class="prog-hpattern" id="ph_crpd"></div><span class="prog-badge">Média Complexidade</span><h2>♿ Centro de Referência da Pessoa com Deficiência</h2><p>Espaço de atendimento aberto que centraliza serviços para pessoas com deficiência e suas famílias.</p></div>
         <div class="prog-body">
           <p>Este é um espaço de atendimento aberto (Média Complexidade) que centraliza serviços para pessoas com deficiência e suas famílias.</p>
-          <div class="info-box" style="margin-top:1.25rem">
-            <strong>📍 Centro de Referência da Pessoa com Deficiência</strong>
-            <span>Rua Carnaúba, 150 — Vila Guiomar, Santo André — CEP 09090-460</span>
-          </div>
-          <div class="sub-items" style="margin-top:.5rem">Atua como polo de orientação sobre direitos e benefícios, oferece apoio psicossocial e articula a rede de saúde, educação e trabalho.</div>
-            <div class="sub-item"><strong>🤝 Fortalecimento comunitário</strong>Fortalece a convivência comunitária e combate violações de direitos, servindo como suporte técnico tanto para as famílias quanto para os profissionais da área.</div>
-          
-          <ul class="prog-list">
-            <li>Orientação sobre direitos e benefícios</li>
-            <li>Apoio psicossocial</li>
-            <li>Encaminhamento para saúde, educação e trabalho</li>
-            <li>Acompanhamento de casos complexos</li>
-            <li>Atividades de convivência e inclusão</li>
-          </ul>
-        
-          <div class="prog-meta">
-            <div class="pm-item"><strong>Público</strong><span>PcD, famílias e cuidadores</span></div>
-            <div class="pm-item"><strong>Complexidade</strong><span>Média — SUAS</span></div>
-          </div>
-          </div>
+          <div class="info-box" style="margin-top:1.25rem"><strong>📍 Centro de Referência da Pessoa com Deficiência</strong><span>Rua Carnaúba, 150 — Vila Guiomar, Santo André — CEP 09090-460</span></div>
+          <div class="sub-items" style="margin-top:.5rem"><div class="sub-item"><strong>🤝 Fortalecimento comunitário</strong>Fortalece a convivência comunitária e combate violações de direitos, servindo como suporte técnico tanto para as famílias quanto para os profissionais da área.</div></div>
+          <ul class="prog-list"><li>Orientação sobre direitos e benefícios</li><li>Apoio psicossocial</li><li>Encaminhamento para saúde, educação e trabalho</li><li>Acompanhamento de casos complexos</li><li>Atividades de convivência e inclusão</li></ul>
+          <div class="prog-meta"><div class="pm-item"><strong>Público</strong><span>PcD, famílias e cuidadores</span></div><div class="pm-item"><strong>Complexidade</strong><span>Média — SUAS</span></div></div>
         </div>
       </div>
     </div>
   </section>
+</div>
 
-</div><!-- /prog-page -->
-
-
-<!-- ══════════ TRANSPARÊNCIA ══════════ -->
+<!-- TRANSPARÊNCIA -->
 <div class="page" id="doc-page">
   <div class="page-hero">
     <div class="container page-hero-inner">
@@ -908,14 +633,7 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
           <div class="doc-info-card" style="border-color:var(--navy)"><strong>CNAS</strong><p style="margin:0">RO588/2007 — Conselho Nacional de Assistência Social</p></div>
           <div class="doc-info-card" style="border-color:var(--green)"><strong>CMAS-SA</strong><p style="margin:0">080/2003 — Conselho Municipal de Assistência Social de Santo André</p></div>
           <div class="doc-info-card" style="border-color:var(--navy2)"><strong>CMDCA</strong><p style="margin:0">115/2007 — Conselho Municipal dos Direitos da Criança e do Adolescente</p></div>
-          <div style="background:var(--navy-dark);border-radius:12px;padding:1.5rem;margin-top:.5rem">
-            <p style="color:rgba(255,255,255,.6);font-size:.83rem;line-height:1.9">
-              <strong style="color:white;display:block;margin-bottom:.4rem">Sede</strong>
-              Av. Dr. Erasmo, 586 — Vila Assunção<br>Santo André - SP · CEP: 09030-010<br><br>
-              <strong style="color:white">Fone 1:</strong> (11) 4421-8104 &nbsp;·&nbsp; <strong style="color:white">Fone 2:</strong> (11) 4473-3425<br>
-              <strong style="color:white">E-mail:</strong> contato@imantunes.org.br
-            </p>
-          </div>
+          <div style="background:var(--navy-dark);border-radius:12px;padding:1.5rem;margin-top:.5rem"><p style="color:rgba(255,255,255,.6);font-size:.83rem;line-height:1.9"><strong style="color:white;display:block;margin-bottom:.4rem">Sede</strong>Av. Dr. Erasmo, 586 — Vila Assunção<br>Santo André - SP · CEP: 09030-010<br><br><strong style="color:white">Fone 1:</strong> (11) 4421-8104 &nbsp;·&nbsp; <strong style="color:white">Fone 2:</strong> (11) 4473-3425<br><strong style="color:white">E-mail:</strong> contato@imantunes.org.br</p></div>
         </div>
         <div>
           <span class="section-tag">Sobre</span>
@@ -936,10 +654,9 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
       </div>
     </div>
   </section>
-</div><!-- /doc-page -->
+</div>
 
-
-<!-- ══════════ FALE CONOSCO ══════════ -->
+<!-- FALE CONOSCO — só contato, sem doações -->
 <div class="page" id="fale-page">
   <div class="page-hero">
     <div class="container page-hero-inner">
@@ -961,6 +678,95 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
             <div class="cc"><div class="cc-ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="cc-text"><strong>E-mail</strong><span>contato@imantunes.org.br</span></div></div>
             <div class="cc"><div class="cc-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="cc-text"><strong>Horário</strong><span>Segunda a Sexta — 8h às 18h</span></div></div>
           </div>
+          <div style="background:var(--cream);border-radius:12px;padding:1.5rem 1.75rem;border-left:4px solid var(--orange)">
+            <strong style="display:block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--orange);margin-bottom:.5rem">Quer fazer uma doação?</strong>
+            <p style="font-size:.87rem;color:#555;line-height:1.6;margin-bottom:1rem">PIX, Nota Fiscal Paulista ou doação de materiais — acesse nossa página dedicada.</p>
+            <a href="#" class="btn btn-primary" onclick="go('doe-page',event)" style="font-size:.85rem;padding:.7rem 1.4rem">💛 Doe Agora →</a>
+          </div>
+        </div>
+        <div class="fale-form fade-up">
+          <div class="form-tabs">
+            <div class="form-tab active" onclick="tab('contato')">Mensagem</div>
+            <div class="form-tab" onclick="tab('material')">Doação de Material</div>
+            <div class="form-tab" onclick="tab('curriculo')">Carreiras</div>
+          </div>
+          <div class="form-panel active" id="tab-contato">
+            <div class="form-body">
+              <h3>Para outros assuntos</h3>
+              <p>Respondemos em até 2 dias úteis</p>
+              <div class="form-row2">
+                <div class="fg"><label>Nome *</label><input type="text" id="fc-nome" placeholder="Seu nome completo"></div>
+                <div class="fg"><label>E-mail *</label><input type="email" id="fc-email" placeholder="seu@email.com"></div>
+              </div>
+              <div class="form-row2">
+                <div class="fg"><label>Telefone</label><input type="tel" id="fc-tel" placeholder="(11) 90000-0000"></div>
+                <div class="fg"><label>Assunto</label>
+                  <select id="fc-assunto">
+                    <option>Parcerias institucionais</option>
+                    <option>Solicitação de documentos</option>
+                    <option>Imprensa</option>
+                    <option>Voluntariado</option>
+                    <option>Outros</option>
+                  </select>
+                </div>
+              </div>
+              <div class="fg"><label>Mensagem *</label><textarea id="fc-mensagem" placeholder="Escreva sua mensagem..."></textarea></div>
+              <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="enviarContato()">Enviar mensagem →</button>
+            </div>
+          </div>
+          <div class="form-panel" id="tab-material">
+            <div class="form-body">
+              <h3>Doação de Material</h3>
+              <p>Agende a entrega — contato prévio necessário</p>
+              <div class="form-row2">
+                <div class="fg"><label>Nome *</label><input type="text" placeholder="Seu nome"></div>
+                <div class="fg"><label>Telefone *</label><input type="tel" placeholder="(11) 90000-0000"></div>
+              </div>
+              <div class="fg"><label>O que deseja doar *</label><select><option>Alimentos não perecíveis</option><option>Produtos de higiene e limpeza</option><option>Roupas, calçados e agasalhos</option><option>Materiais educativos e recreativos</option><option>Móveis e eletrodomésticos</option><option>Outros</option></select></div>
+              <div class="fg"><label>Descrição</label><textarea placeholder="Quantidade aproximada e estado de conservação..."></textarea></div>
+              <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="submitForm(this)">Agendar doação →</button>
+            </div>
+          </div>
+          <div class="form-panel" id="tab-curriculo">
+            <div class="form-body">
+              <h3>Envie seu currículo</h3>
+              <p>Faça parte do time do IMA</p>
+              <div class="form-row2">
+                <div class="fg"><label>Nome *</label><input type="text" placeholder="Seu nome completo"></div>
+                <div class="fg"><label>E-mail *</label><input type="email" placeholder="seu@email.com"></div>
+              </div>
+              <div class="form-row2">
+                <div class="fg"><label>Telefone *</label><input type="tel" placeholder="(11) 90000-0000"></div>
+                <div class="fg"><label>Área</label><select><option>Assistência Social</option><option>Psicologia</option><option>Educação</option><option>Saúde / Cuidador</option><option>Administrativo</option><option>Voluntariado</option><option>Outra</option></select></div>
+              </div>
+              <div class="fg"><label>Apresentação *</label><textarea placeholder="Fale sobre você e sua motivação para trabalhar no IMA..."></textarea></div>
+              <div class="fg"><label>Link do currículo</label><input type="url" placeholder="https://linkedin.com/in/seuperfil"></div>
+              <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="submitForm(this)">Enviar currículo →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- DOE AGORA — conteúdo de doações que estava no fale-page -->
+<div class="page" id="doe-page">
+  <div class="page-hero">
+    <div class="container page-hero-inner">
+      <div class="page-breadcrumb"><a href="#" onclick="go('home-page',event)">Home</a><span>/</span><span style="color:rgba(255,255,255,.8)">Doe Agora</span></div>
+      <span class="page-hero-tag">Doe Agora</span>
+      <h1>Contamos com a sua ajuda para manter nossos programas</h1>
+      <p>Você pode nos ajudar de diversas maneiras. Escolha a forma que preferir.</p>
+    </div>
+  </div>
+  <section class="section-white">
+    <div class="container">
+      <div class="fale-grid">
+        <div class="fade-up">
+          <span class="section-tag">Doe Agora</span>
+          <h2 class="section-title" style="font-size:1.6rem;margin-bottom:1.1rem">Sua doação transforma vidas</h2>
+          <p style="color:#555;line-height:1.8;margin-bottom:1.5rem">Cada contribuição garante moradia, cuidado e dignidade para mais de 80 moradores em nossas casas. Escolha a forma ao lado.</p>
           <div class="pix-box">
             <h4>Doe por PIX — Instituto Monsenhor Antunes</h4>
             <span class="pix-key">05.614.358/0001-28</span>
@@ -977,9 +783,7 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
           <div class="form-tabs">
             <div class="form-tab active" onclick="tab('pix')">PIX / TEF</div>
             <div class="form-tab" onclick="tab('nota')">Nota Paulista</div>
-            <div class="form-tab" onclick="tab('material')">Material</div>
-            <div class="form-tab" onclick="tab('contato')">Outros</div>
-            <div class="form-tab" onclick="tab('curriculo')">Currículo</div>
+            <div class="form-tab" onclick="tab('doa-material')">Material</div>
           </div>
           <div class="form-panel active" id="tab-pix">
             <div class="form-body">
@@ -1018,12 +822,12 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
                 <li>Acesse o site ou app da <strong>Nota Fiscal Paulista</strong> e clique em "Entrar com gov.br"</li>
                 <li>Vá em <strong>Entidades → Doação Automática</strong></li>
                 <li>Selecione o período e busque pelo CNPJ: <strong>05.614.358/0001-28</strong></li>
-                <li>Clique em <strong>Confirmar</strong> e pronto! Vamos juntos?</li>
+                <li>Clique em <strong>Confirmar</strong> e pronto!</li>
               </ol>
               <a href="https://www.nfp.fazenda.sp.gov.br" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center">Acessar Nota Fiscal Paulista →</a>
             </div>
           </div>
-          <div class="form-panel" id="tab-material">
+          <div class="form-panel" id="tab-doa-material">
             <div class="form-body">
               <h3>Doação de Material</h3>
               <p>Agende a entrega — contato prévio necessário</p>
@@ -1036,48 +840,11 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
               <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="submitForm(this)">Agendar doação →</button>
             </div>
           </div>
-          <div class="form-panel" id="tab-contato">
-            <div class="form-body">
-              <h3>Para outros assuntos</h3>
-              <p>Respondemos em até 2 dias úteis</p>
-              <div class="form-row2">
-                <div class="fg"><label>Nome *</label><input type="text" placeholder="Seu nome completo"></div>
-                <div class="fg"><label>E-mail *</label><input type="email" placeholder="seu@email.com"></div>
-              </div>
-              <div class="form-row2">
-                <div class="fg"><label>Telefone</label><input type="tel" placeholder="(11) 90000-0000"></div>
-                <div class="fg"><label>Assunto</label><select><option>Parcerias institucionais</option><option>Solicitação de documentos</option><option>Imprensa</option><option>Voluntariado</option><option>Outros</option></select></div>
-              </div>
-              <div class="fg"><label>Mensagem *</label><textarea placeholder="Escreva sua mensagem..."></textarea></div>
-              <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="submitForm(this)">Enviar mensagem →</button>
-            </div>
-          </div>
-          <div class="form-panel" id="tab-curriculo">
-            <div class="form-body">
-              <h3>Envie seu currículo</h3>
-              <p>Faça parte do time do IMA</p>
-              <div class="form-row2">
-                <div class="fg"><label>Nome *</label><input type="text" placeholder="Seu nome completo"></div>
-                <div class="fg"><label>E-mail *</label><input type="email" placeholder="seu@email.com"></div>
-              </div>
-              <div class="form-row2">
-                <div class="fg"><label>Telefone *</label><input type="tel" placeholder="(11) 90000-0000"></div>
-                <div class="fg"><label>Área</label><select><option>Assistência Social</option><option>Psicologia</option><option>Educação</option><option>Saúde / Cuidador</option><option>Administrativo</option><option>Voluntariado</option><option>Outra</option></select></div>
-              </div>
-              <div class="fg"><label>Apresentação *</label><textarea placeholder="Fale sobre você e sua motivação para trabalhar no IMA..."></textarea></div>
-              <div class="fg"><label>Link do currículo</label><input type="url" placeholder="https://linkedin.com/in/seuperfil"></div>
-              <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="submitForm(this)">Enviar currículo →</button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </section>
-</div><!-- /fale-page -->
-
-
-
-
+</div>
 
 <!-- FOOTER -->
 <footer>
@@ -1118,12 +885,11 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
       <div class="ft-col">
         <h4>Fale Conosco</h4>
         <ul>
-          <li><a href="#" onclick="go('fale-page',event);tab('pix')">Doar por PIX / TEF</a></li>
-          <li><a href="#" onclick="go('fale-page',event);tab('nota')">Nota Paulista</a></li>
-          <li><a href="#" onclick="go('fale-page',event);tab('material')">Doação de Material</a></li>
+          <li><a href="#" onclick="go('doe-page',event);tab('pix')">Doar por PIX / TEF</a></li>
+          <li><a href="#" onclick="go('doe-page',event);tab('nota')">Nota Paulista</a></li>
+          <li><a href="#" onclick="go('doe-page',event);tab('doa-material')">Doação de Material</a></li>
           <li><a href="#" onclick="go('fale-page',event);tab('contato')">Outros Assuntos</a></li>
           <li><a href="#" onclick="go('fale-page',event);tab('curriculo')">Enviar Currículo</a></li>
-          <!-- <li><a href="#" onclick="go('colab-page',event)">Colaboradores</a></li>-->
         </ul>
       </div>
     </div>
@@ -1134,94 +900,80 @@ footer{background:#0c0c0c;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
   </div>
 </footer>
 
-
 <script>
-/* PADRÕES */
-function buildHeroPattern(){const hp=document.getElementById('heroPattern');if(!hp)return;hp.innerHTML=Array(30).fill(0).map(()=>`<div class="person"><div class="head"></div><div class="body"></div></div>`).join('')}
-function buildProgPatterns(){['ph1','ph2','ph3','ph4','ph_cmv','ph_ri','ph_alb','ph_crpd'].forEach(id=>{const el=document.getElementById(id);if(!el)return;el.innerHTML=Array(16).fill(0).map(()=>`<div class="php-icon"><div class="h"></div><div class="b"></div></div>`).join('')})}
+function buildHeroPattern(){var hp=document.getElementById('heroPattern');if(!hp)return;hp.innerHTML=Array(30).fill(0).map(function(){return'<div class="person"><div class="head"></div><div class="body"></div></div>'}).join('')}
+function buildProgPatterns(){['ph1','ph2','ph3','ph4','ph_cmv','ph_ri','ph_alb','ph_crpd'].forEach(function(id){var el=document.getElementById(id);if(!el)return;el.innerHTML=Array(16).fill(0).map(function(){return'<div class="php-icon"><div class="h"></div><div class="b"></div></div>'}).join('')})}
 
-/* NAVEGAÇÃO */
-function go(pageId, e, isAnchor = false) {
-  if (e) { e.preventDefault(); e.stopPropagation(); }
-  document.querySelectorAll('.page').forEach(p => { p.classList.remove('active'); p.style.display = 'none' });
-  const t = document.getElementById(pageId);
-  if (t) { t.classList.add('active'); t.style.display = 'block' }
-  
-  // SÓ volta pro topo se NÃO for um clique de scroll (âncora/aba)
-  if (!isAnchor) {
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }
-
+function go(pageId,e,isAnchor){
+  if(e){e.preventDefault();e.stopPropagation();}
+  document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');p.style.display='none';});
+  var t=document.getElementById(pageId);
+  if(t){t.classList.add('active');t.style.display='block';}
+  if(!isAnchor){window.scrollTo({top:0,behavior:'instant'});}
   document.getElementById('mMenu').classList.remove('open');
-  setTimeout(() => { if (t) t.querySelectorAll('.fade-up').forEach(el => { el.classList.remove('visible'); setTimeout(() => obs.observe(el), 80) }) }, 80);
+  setTimeout(function(){if(t)t.querySelectorAll('.fade-up').forEach(function(el){el.classList.remove('visible');setTimeout(function(){obs.observe(el)},80)})},80);
 }
 
-/* FUNÇÃO DE SCROLL (ESSENCIAL PARA QUEM SOMOS E PROGRAMAS) */
-function sc(id) {
-  setTimeout(() => {
-    const el = document.getElementById(id);
-    if (el) {
-      const yOffset = -100; 
-      const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-  }, 120);
+function sc(id){
+  setTimeout(function(){
+    var el=document.getElementById(id);
+    if(el){var y=el.getBoundingClientRect().top+window.pageYOffset-100;window.scrollTo({top:y,behavior:'smooth'});}
+  },120);
 }
 
-/* FUNÇÃO UNIFICADA PARA DOAÇÕES E FALE CONOSCO */
-function goTabSc(t) {
-  // 1. Fecha o menu mobile imediatamente após o clique
+function tab(t){
+  var panels=document.querySelectorAll('.form-panel');
+  var tabs=document.querySelectorAll('.form-tab');
+  panels.forEach(function(p){p.classList.remove('active');});
+  tabs.forEach(function(tb){tb.classList.remove('active');});
+  var p=document.getElementById('tab-'+t);
+  if(p){p.classList.add('active');}
+  var tabEl=document.querySelector('[onclick="tab(\''+t+'\')"]');
+  if(tabEl){tabEl.classList.add('active');}
+}
+
+function goTabSc(t){
   document.getElementById('mMenu').classList.remove('open');
-
-  // 2. Troca de página sem o pulo seco pro topo
-  go('fale-page', null, true); 
-  
-  setTimeout(() => {
-    // 3. Ativa a aba interna (PIX, Contato, etc)
-    tab(t);
-    // 4. Scrola suavemente até o formulário
-    const form = document.querySelector('.fale-form');
-    if (form) {
-      const y = form.getBoundingClientRect().top + window.pageYOffset - 110;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-  }, 150);
-}
-
-function tab(t) {
-  const tabMap = { pix: 0, nota: 1, material: 2, contato: 3, curriculo: 4 };
-  document.querySelectorAll('.form-tab').forEach((el, i) => el.classList.toggle('active', i === tabMap[t]));
-  document.querySelectorAll('.form-panel').forEach(p => {
-    p.classList.remove('active');
-    p.style.display = 'none';
-  });
-  const p = document.getElementById('tab-' + t);
-  if (p) {
-    p.classList.add('active');
-    p.style.display = 'block';
+  if(t==='contato'||t==='curriculo'||t==='material'){
+    go('fale-page',null,true);
+    setTimeout(function(){tab(t);},150);
+  } else {
+    go('doe-page',null,true);
+    setTimeout(function(){tab(t);},150);
   }
 }
 
-/* DEMAIS UTILITÁRIOS */
-function submitForm(btn){const o=btn.textContent;btn.textContent='✓ Enviado!';btn.style.background='#326341';btn.disabled=true;setTimeout(()=>{btn.textContent=o;btn.style.background='';btn.disabled=false},3000)}
+function enviarContato(){
+  var nome=document.getElementById('fc-nome').value.trim();
+  var email=document.getElementById('fc-email').value.trim();
+  var tel=document.getElementById('fc-tel').value.trim();
+  var assunto=document.getElementById('fc-assunto').value;
+  var mensagem=document.getElementById('fc-mensagem').value.trim();
+  if(!nome||!email||!mensagem){alert('Por favor, preencha Nome, E-mail e Mensagem.');return;}
+  var sub=encodeURIComponent('[Site IMA] '+assunto+' — '+nome);
+  var body=encodeURIComponent('Nome: '+nome+'\nE-mail: '+email+(tel?'\nTelefone: '+tel:'')+'\nAssunto: '+assunto+'\n\nMensagem:\n'+mensagem);
+  window.location.href='mailto:contato@imantunes.org.br?subject='+sub+'&body='+body;
+}
+
+function submitForm(btn){var o=btn.textContent;btn.textContent='✓ Enviado!';btn.style.background='#326341';btn.disabled=true;setTimeout(function(){btn.textContent=o;btn.style.background='';btn.disabled=false},3000)}
 function toggleMenu(){document.getElementById('mMenu').classList.toggle('open')}
-window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',scrollY>20));
+window.addEventListener('scroll',function(){document.getElementById('navbar').classList.toggle('scrolled',scrollY>20)});
 
-const tlWrap=document.getElementById('tlWrap');
+var tlWrap=document.getElementById('tlWrap');
 if(tlWrap){
-  let isDown=false,startX,scrollLeft;
-  tlWrap.addEventListener('mousedown',e=>{isDown=true;tlWrap.style.cursor='grabbing';startX=e.pageX-tlWrap.offsetLeft;scrollLeft=tlWrap.scrollLeft});
-  tlWrap.addEventListener('mouseleave',()=>{isDown=false;tlWrap.style.cursor='grab'});
-  tlWrap.addEventListener('mouseup',()=>{isDown=false;tlWrap.style.cursor='grab'});
-  tlWrap.addEventListener('mousemove',e=>{if(!isDown)return;e.preventDefault();const x=e.pageX-tlWrap.offsetLeft;tlWrap.scrollLeft=scrollLeft-(x-startX)*1.5});
+  var isDown=false,startX,scrollLeft;
+  tlWrap.addEventListener('mousedown',function(e){isDown=true;tlWrap.style.cursor='grabbing';startX=e.pageX-tlWrap.offsetLeft;scrollLeft=tlWrap.scrollLeft});
+  tlWrap.addEventListener('mouseleave',function(){isDown=false;tlWrap.style.cursor='grab'});
+  tlWrap.addEventListener('mouseup',function(){isDown=false;tlWrap.style.cursor='grab'});
+  tlWrap.addEventListener('mousemove',function(e){if(!isDown)return;e.preventDefault();var x=e.pageX-tlWrap.offsetLeft;tlWrap.scrollLeft=scrollLeft-(x-startX)*1.5});
 }
 
-const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.1});
+var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.1});
 
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded',function(){
   buildHeroPattern();
   buildProgPatterns();
-  document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+  document.querySelectorAll('.fade-up').forEach(function(el){obs.observe(el)});
 });
 </script>
 </body>
